@@ -14,6 +14,7 @@
 
 # define FT_LIST_H
 # include <unistd.h>
+# include <stdlib.h>
 
 typedef struct		s_list
 {
@@ -21,9 +22,11 @@ typedef struct		s_list
 	char		data;
 }			t_list;
 
-t_list				*ft_create_elem(char *data);
-void				ft_list_push_back(t_list **begin, char *data);
-void				ft_list_clear(t_list **begin_list);
-char				ft_list_pop_front(t_list **begin);
+t_list			*ft_create_elem(char *data);
+void			ft_list_push_back(t_list **begin, char *data);
+void			ft_list_clear(t_list **begin_list);
+char			ft_list_pop_front(t_list **begin);
+int			ft_length_list(t_list **begin);
+char			*convert_to_string(t_list **begin);
 
 #endif
