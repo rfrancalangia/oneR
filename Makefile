@@ -4,12 +4,12 @@
 # *  Created By : rfrancalangia                                     
 # *  
 # *  Creation Date : 09-12-2017
-# *  Last Modified : Tue Sep 12 20:41:34 2017
+# *  Last Modified : Tue Sep 19 21:09:07 2017
 # *  Description :       
 # *                               
 # * *************************************************************** *
 
-FILES = oneR.c attributes.c
+FILES = oneR.c open_and_store.c utilities.c
 INCLUDES = char_list/*.c
 RUN = oneR
 FLAGS = -Wall -Werror -Wextra -o

@@ -1,20 +1,20 @@
 /* ***************************************************************
  *  
- *  File Name : ft_length_list.c
+ *  File Name : c_length_list.c
  *  Created By : rfrancalangia                                     
  *  
  *  Creation Date : 09-12-2017
- *  Last Modified : Wed Sep 13 00:01:52 2017
+ *  Last Modified : Tue Sep 19 20:28:01 2017
  *  Description :       
  *                               
  * *************************************************************** */
 
-#include "ft_list.h"
+#include "c_list.h"
 
-int	ft_length_list(t_list **begin)
+int	c_length_list(c_list **begin)
 {
 	int len;
-	t_list *temp; 
+	c_list *temp; 
 
 	temp = *begin;
 	len = 0;

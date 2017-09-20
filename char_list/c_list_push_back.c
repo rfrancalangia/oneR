@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_create_elem.c                                   :+:      :+:    :+:   */
+/*   c_list_push_back.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rfrancal <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -10,15 +10,15 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_list.h"
+#include "c_list.h"
 
-void	ft_list_push_back(t_list **begin, char *data)
+void	c_list_push_back(c_list **begin, char *data)
 {
-	t_list *curr;
+	c_list *curr;
 
 	if (*begin == NULL)
 	{
-		*begin = ft_create_elem(data);
+		*begin = c_create_elem(data);
 		return ;
 	}
 	curr = *begin;
@@ -26,5 +26,5 @@ void	ft_list_push_back(t_list **begin, char *data)
 	{
 		curr = curr->next;
 	}
-	curr->next = ft_create_elem(data);
+	curr->next = c_create_elem(data);
 }

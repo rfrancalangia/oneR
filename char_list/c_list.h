@@ -20,13 +20,13 @@ typedef struct		s_list
 {
 	struct s_list	*next;
 	char		data;
-}			t_list;
+}			c_list;
 
-t_list			*ft_create_elem(char *data);
-void			ft_list_push_back(t_list **begin, char *data);
-void			ft_list_clear(t_list **begin_list);
-char			ft_list_pop_front(t_list **begin);
-int			ft_length_list(t_list **begin);
-char			*convert_to_string(t_list **begin);
+c_list			*c_create_elem(char *data);
+void			c_list_push_back(c_list **begin, char *data);
+void			c_list_clear(c_list **begin_list);
+char			c_list_pop_front(c_list **begin);
+int			c_length_list(c_list **begin);
+char			*convert_to_string(c_list **begin);
 
 #endif

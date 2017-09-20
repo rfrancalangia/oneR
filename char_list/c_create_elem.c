@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_create_elem.c                                   :+:      :+:    :+:   */
+/*   c_create_elem.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rfrancal <rfrancal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -10,13 +10,13 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_list.h"
+#include "c_list.h"
 
-t_list		*ft_create_elem(char *data)
+c_list		*c_create_elem(char *data)
 {
-	t_list *temp;
+	c_list *temp;
 
-	temp = malloc(sizeof(t_list));
+	temp = malloc(sizeof(c_list));
 	if (temp)
 	{
 		temp->data = *data;
